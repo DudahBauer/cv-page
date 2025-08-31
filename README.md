@@ -75,6 +75,4 @@ Este projeto foi criado para cumprir todos os requisitos da Atividade Prática C
 Feito com 💜 por **Maria Eduarda Vicente Bauer**.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maria-eduarda-vicente-bauer-55664230a/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DudahBauer/)
 
-**(Lembre-se de trocar `seu-usuario` nos links acima pelos seus nomes de usuário reais do LinkedIn e GitHub!)**
