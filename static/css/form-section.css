@@ -1,0 +1,63 @@
+/* Estilização do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--cor-principal-clara);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+form label {
+    margin-top: 15px;
+    color: var(--cor-principal-escura);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    margin-top: 8px;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-escuro);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--cor-acento-media);
+    box-shadow: 0 0 0 3px rgba(111, 192, 199, 0.3);
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: var(--cor-acento-media);
+    color: var(--cor-texto-claro);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+form button:hover {
+    background-color: var(--cor-acento-escura);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}

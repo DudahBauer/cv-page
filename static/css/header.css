@@ -1,0 +1,37 @@
+/* Estilização do cabeçalho e do menu */
+header {
+    background-color: var(--cor-principal-media);
+    padding: 15px 0;
+    position: fixed; /* Deixa o menu fixo no topo */
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-principal-escura);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,174 @@
+footer {
+    background-color: var(--cor-principal-media);
+    color: var(--cor-texto-claro);
+    padding: 30px 5%;
+    text-align: center;
+
+    /* Propriedades para o Scroll Snap */
+    scroll-snap-align: start;
+    height: auto;
+    min-height: 20vh; /* Altura mínima para não ficar muito pequeno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.footer-creditos {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Centraliza os ícones no meio */
+}
+
+/* --- Estilos do Rodapé --- */
+
+footer {
+    background-color: var(--cor-principal-media);
+    color: var(--cor-texto-claro);
+    padding: 30px 5%;
+    text-align: center;
+
+    /* Propriedades para o Scroll Snap */
+    scroll-snap-align: start;
+    height: auto; /* Altura automática para o conteúdo */
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- CORREÇÃO ADICIONADA AQUI --- */
+.footer-localizacao p {
+    margin: 0; /* Remove a margem padrão do parágrafo para alinhar com o ícone */
+}
+
+.footer-creditos {
+    text-align: right; /* Alinha à direita */
+    font-size: 0.9em;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Centraliza os ícones no meio */
+}
+
+/* --- Estilos do Rodapé --- */
+
+
+footer {
+    background-color: var(--cor-principal-media);
+    color: var(--cor-texto-claro);
+    padding: 20px 5%; /* Padding vertical menor */
+    position: relative; /* Necessário para posicionar os créditos */
+
+    /* Propriedades para o Scroll Snap */
+    scroll-snap-align: start;
+    min-height: 25vh; /* Aumenta um pouco a altura mínima */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo principal */
+    align-items: center;
+}
+
+/* Novo container central para ícones e localização */
+.footer-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre os ícones e a localização */
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.footer-localizacao p {
+    margin: 0;
+}
+
+/* Estilos para os créditos */
+.footer-creditos {
+    position: absolute; /* Posição absoluta relativa ao footer */
+    bottom: 15px; /* 15px do fundo */
+    right: 5%;    /* 5% da direita (mesmo que o padding) */
+    font-size: 0.9em;
+    opacity: 0.8; /* Leve transparência */
+}
+
+.footer-creditos p {
+    margin: 0;
+}
+
+/* Estilo dos ícones do rodapé*/
+.social-icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid var(--cor-principal-clara);
+    border-radius: 50%;
+    color: var(--cor-texto-claro);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon-footer svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon-footer:hover {
+    background-color: var(--cor-principal-escura);
+    border-color: var(--cor-principal-escura);
+    transform: translateY(-4px);
+}
+
+/* --- Ajuste na Responsividade --- */
+@media (max-width: 768px) {
+    footer {
+        min-height: 30vh; /* Aumenta um pouco mais a altura no mobile */
+    }
+
+    .footer-creditos {
+        /* No mobile, centraliza os créditos na parte inferior */
+        width: 100%;
+        text-align: center;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}

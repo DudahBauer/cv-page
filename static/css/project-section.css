@@ -1,0 +1,64 @@
+/* Estilização dos projetos em grid */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.projeto-card h3 {
+    color: var(--cor-principal-escura);
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.projeto-card img {
+    max-width: 100%;
+    height: 180px; /* Ajusta a altura da imagem */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-bordas);
+}
+
+.projeto-card p {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    color: var(--cor-texto-escuro);
+}
+
+/* Estilização do botão "Ver Projeto" */
+.btn-ver-projeto {
+    display: inline-block;
+    background-color: var(--cor-acento-media);
+    color: var(--cor-texto-claro);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.btn-ver-projeto:hover {
+    background-color: var(--cor-acento-escura);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
